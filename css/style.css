@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i');
+/* colors=> from dark to light: #0C0A0C, #262426, #3E3C3E, #595759, #8B8A86 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: #8B8A86;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.dropbox.com/s/uq6a1x11qbw8lt0/IMG_200902-b%26w-firstToUse.jpg?raw=1");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.dropbox.com/s/uq6a1x11qbw8lt0/IMG_200902-b%26w-firstToUse.jpg?raw=1");
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-title {
+  color: #8B8A86;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.light1 {
+  -webkit-animation: lightsOn 1.5s 2.5s linear forwards;
+          animation: lightsOn 1.5s 2.5s linear forwards;
+}
+
+.light2 {
+  -webkit-animation: lightsOn 1.5s 3.5s linear forwards;
+          animation: lightsOn 1.5s 3.5s linear forwards;
+}
+
+.light3 {
+  -webkit-animation: lightsOn 1.5s 4s linear forwards;
+          animation: lightsOn 1.5s 4s linear forwards;
+}
+
+/* header title lights */
+@-webkit-keyframes lightsOn {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8B8A86, 0 0 70px #8B8A86, 0 0 80px #8B8A86, 0 0 100px #8B8A86, 0 0 150px #8B8A86;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #8B8A86, 0 0 35px #8B8A86, 0 0 40px #8B8A86, 0 0 50px #8B8A86, 0 0 75px #8B8A86;
+  }
+}
+@keyframes lightsOn {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8B8A86, 0 0 70px #8B8A86, 0 0 80px #8B8A86, 0 0 100px #8B8A86, 0 0 150px #8B8A86;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #8B8A86, 0 0 35px #8B8A86, 0 0 40px #8B8A86, 0 0 50px #8B8A86, 0 0 75px #8B8A86;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #595759;
+  color: #262426;
+  padding: 20px;
+}
+
+main a {
+  display: inline-block;
+  color: #0B030C;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #262426;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+article img {
+  width: 100%;
+}
+
+p,
+footer,
+li,
+.quotation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+li {
+  margin-left: 20px;
+}
+
+.quotation {
+  font-style: italic;
+  quotes: none;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 1px;
+  border: 0;
+  background: #262426;
+  background-image: -webkit-linear-gradient(left, #595759, #262426, #595759);
+  background-image: linear-gradient(to right, #595759, #262426, #595759);
+}
+
+footer {
+  background: #262426;
+  color: #0C0A0C;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  color: #0C0A0C;
+  padding-right: 15px;
+}
+
+footer a:hover {
+  color: #8B8A86;
+}
+
